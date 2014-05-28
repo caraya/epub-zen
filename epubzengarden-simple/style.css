@@ -1,0 +1,143 @@
+/*
+"Contact" for epubzengarden.com
+Created by Anthony Caccese (http://www.alphatoanant.net)
+Based on type design found in "Contact" by Carl Sagan
+Released under a Creative Commons Attribution license.
+*/
+
+#content {
+	font-size: 1em;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+}
+
+	/* Headings */
+	#content h1,
+	#content h2,
+	#content h3,
+	#content h4 {
+		text-align: right;
+		padding: 0;
+		font-weight: normal;
+	}
+
+	/* H1 is used only for the Book title (e.g. "Book I") */
+	#content h1 {
+		font-size: 2em;
+		font-variant: small-caps;
+		margin: 10% 7% 1%;
+		color: #036;
+	}
+
+	/* H2 is used only for the Book subtitle (e.g. "Miss Brooke") */
+	#content h2 {
+		font-size: 4em;
+		line-height: .8em;
+		font-variant: small-caps;
+		margin: 0 7% 10%;
+	}
+
+	/* H3 is used as the chapter header on all chapter pages */
+	#content h3 {
+		font-size: 1em;
+		text-transform: uppercase;
+		margin: 10% 7% 0;
+	}
+		/* The chapter headings contain two spans with these classes: chapter-name (always contains the word "Chapter") 
+		   and chapter-number (as a roman numeral) */
+		#content h3 .chapter-name {
+			border-top: 1px solid #999;
+			padding: .2em 0 0;
+		}
+		#content h3 .chapter-number {
+			font-size: 5em;
+			line-height: 1.1em;
+			color: #036;
+			margin-left: 0.1em;
+		}
+
+	/* H4 is used as the chapter subtitle */
+	#content h4 {
+		font-size: 3em;
+		font-weight: normal;
+		margin: 0 7% 10%;
+	}
+
+	/* Paragraphs */
+	#content p {
+		line-height: 1.4em;
+		text-indent: 1em;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+		/* The first paragraph in the work has a class called "noindent" which 
+		suppresses any paragraph indentation applied by default, but you can 
+		override this. */
+		#content p.noindent {
+			text-indent: 0;
+		}
+
+	/* Epigraphs at the beginning of each chapter are in blockquotes */
+	#content blockquote {
+		padding: 0;
+		margin: 10%;
+	}
+		#content blockquote p {
+			text-indent: 0;
+		}
+		/* The attribution of the blockquote is a span */
+		#content .attribution {
+			display: block;
+			font-size: 0.8em;
+		}
+			/* ...which also contains an attribution-name, wrapping the name of
+			   the person who made the quotation */
+			#content .attribution-name {
+				font-variant: small-caps;
+				font-style: normal;
+				letter-spacing: 1px;
+			}
+
+	/* Horizontal rules */
+	#content hr {
+		margin: 5% 40%;
+	}
+
+	/* The first letter of the text is wrapped in a span with
+	   the class 'firstletter', which can be used for dropcaps. */
+	#content .firstletter {
+		display: block;
+		float: left;
+		font-size: 2.8em;
+		line-height: 0.5em;
+		margin: 0 0.1em 0 0;
+		padding-top: 0.3em;
+		text-transform: uppercase;
+	}
+
+	/* Middlemarch contains a number of letters, which can be
+	   styled differently. */
+	#content .letter {
+		padding: 0;
+		margin: 5% 8% 2%;
+		color: #036;
+	}
+		#content .para-start-phrase {
+			font-variant: small-caps;
+		}
+	#content .closing {
+		text-align: right;
+		margin: 5% 8% 2%;
+		font-style: italic;
+		color: #036;
+	}
+
+	/* Outside of the content area you can address the style of the running
+	   book and author headings. */
+	#content-title .title {
+		font-variant: small-caps;
+	}
+	#content-title .author {
+		font-style: italic;
+	}

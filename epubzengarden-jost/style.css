@@ -1,0 +1,119 @@
+/* Jost v1 by Mike Fallows - 2010 */
+
+/* The book is always contained inside of #content; treat this as you would the HTML body.
+   It is important to not change the width of this element (it will be 800px). Leave
+   min-height as-is; it's useful when you set the background color to something 
+   other than white.  */
+
+#content {
+	min-height: 800px;
+	background: #fff;
+	padding: 0 32px 32px 0;
+	margin: 0;
+	font: 1em/1.5em Palatino, 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+	text-align: left;
+	color: #222;
+
+}	 
+
+/* H1 is used only for the Book title (e.g. "Book I") */
+#content h1 {
+	font: 3em/3em Futura, 'Century Gothic', 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+/* H2 is used only for the Book subtitle (e.g. "Miss Brooke") */
+#content h2 {
+  	font: 1.5em/1.5em Palatino, 'Palatino Linotype', Georgia, 'Times New Roman', serif;
+	font-weight: normal;
+  	color: #f00;
+	margin-bottom: 1em;
+}
+
+/* H3 is used as the chapter header on all chapter pages */
+#content h3 {
+	font: 1em/1.5em Futura, 'Century Gothic', 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+/* The chapter headings contain two spans with these classes: chapter-name (always contains the word "Chapter") 
+   and chapter-number (as a roman numeral) */
+#content h3.chapter-name {
+}
+#content h3.chapter-number {
+}
+
+/* Epigraphs at the beginning of each chapter are in blockquotes */
+#content blockquote {
+	padding: 1em;
+	margin: 1em;
+}
+
+/* The attribution of the blockquote is a span */
+#content span.attribution {
+	display: block;
+	font-style: italic;
+}
+
+#content p {
+	text-align: justify;
+	margin-bottom: 1em;
+}
+
+/* ...which also contains an attribution-name, wrapping the name of
+   the person who made the quotation */
+#content span.attribution-name {
+	text-transform: none;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	font-style: normal;
+	font-family: Futura, 'Century Gothic', 'Trebuchet MS', sans-serif;
+	letter-spacing: 1px;
+}
+
+/* Outside of the content area you can address the style of the running
+   book and author headings. */
+#content-title {
+	text-align: right;
+	font: 0.8em/1.5em Futura, 'Century Gothic', 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+	color: #f00;
+}
+#content-title .title {
+}
+#content-title .author {
+}
+
+/* The first paragraph in the work has a class called "noindent" which 
+   suppresses any paragraph indentation applied by default, but you can 
+   override this. */
+#content p.noindent {
+	text-indent: 0;
+}
+
+/* The first letter of the text is wrapped in a span with
+   the class 'firstletter', which can be used for dropcaps. */
+#content span.firstletter {
+}
+
+/* Middlemarch contains a number of letters, which can be
+   styled differently. */
+#content p.letter {
+	margin-left: 1em;
+}
+
+/* Found in a letter */
+#content p.salutation, #content p span.para-start-phrase {
+	font-size: 0.875em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+#content p.closing {
+	margin-left: 1em;
+}
+
+#content img#cover-img {
+	
+}

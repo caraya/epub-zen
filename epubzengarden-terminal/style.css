@@ -1,0 +1,131 @@
+/* The book is always contained inside of #content; treat this as you would the HTML body */
+#content {
+  font-family: Courier New, 'Bitstream Vera Sans Mono', monospace;
+  background-color: black;
+  font-weight: 500;
+  color: #00FF00; /* Bright Green */
+  min-height: 800px;
+/*  width: 51em;  Try to make it wrap at about 80 characters, like a programmer */
+}	 
+
+/* H1 is used only for the Book title (e.g. "Book I") */
+#content h1 {
+}
+#content h1:before {
+  content: '/* ----------------------------';
+  display: block;
+  line-height: 2em;
+}
+#content h1:after {
+  content: '---------------------------- */';
+  display: block;
+}
+
+/* H2 is used only for the Book subtitle (e.g. "Miss Brooke") */
+#content h2 {
+  color: #C60000; /* Red */
+  text-align: center;
+}
+#content h2:before {
+  content: '/* TODO: Refactor */';
+  display: block;
+}
+
+
+/* H3 is used as the chapter header on all chapter pages */
+#content h3 {
+  color: #00BFBF; /* Light Blue */
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+/* The chapter headings contain two spans with these classes: chapter-name (always contains the word "Chapter") 
+   and chapter-number (as a roman numeral) */
+#content h3 .chapter-name {
+  text-transform: uppercase;
+}
+#content h3.chapter-number {
+}
+
+/* Epigraphs at the beginning of each chapter are in blockquotes */
+#content blockquote {
+  border-left: 0.5em solid #656565; /* Gray */
+  padding-left: 3em;
+  margin-left: 6em;
+  color: #CC00CC; /* Purple */
+}
+
+/* The attribution of the blockquote is a span */
+span.attribution {
+  text-transform: uppercase;
+  display: block;
+  margin-left: 30%;
+}
+
+/* ...which also contains an attribution-name, wrapping the name of
+   the person who made the quotation */
+span.attribution-name {
+}
+
+/* Outside of the content area you can address the style of the running
+   book and author headings. */
+#content-title .title {
+  /* Inverse */
+  color: black;
+  font-family: Courier New, 'Bitstream Vera Sans Mono', monospace;
+  background-color: #00FF00; /* Bright Green */
+  font-style:normal;  
+}
+#content-title .author {
+  /* Inverse */
+  color: black;
+  font-family: Courier New, 'Bitstream Vera Sans Mono', monospace;
+  font-style:normal;
+  background-color: #00FF00; /* Bright Green */
+}
+
+/* The first paragraph in the work has a class called "noindent" which 
+   suppresses any paragraph indentation applied by default, but you can 
+   override this. */
+p.noindent {
+}
+
+/* The first letter of the text is wrapped in a span with
+   the class 'firstletter', which can be used for dropcaps. */
+span.firstletter {
+  background-color: #656565; /* Gray */
+  text-decoration: blink;
+}
+
+#content p {
+  counter-increment: p;  
+  margin-left: 3em;
+  margin-right: 3em;
+}
+
+#content p:before {
+  color: yellow;
+  margin-left: -3em;
+  display: inline-block;
+  width: 3em;
+  text-align: center;
+  content: counter(p, decimal-leading-zero) ;
+}
+
+
+/* Middlemarch contains a number of letters, which can be
+   styled differently. */
+#content p.letter {
+  color: yellow;
+}
+
+/* Found in a letter */
+#content p.salutation {
+}
+#content p.closing {
+  color: yellow;
+  background-color: #656565; /* Gray */
+}
+
+
