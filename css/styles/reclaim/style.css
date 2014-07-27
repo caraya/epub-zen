@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Dayroom';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/dayroom.ttf);
+}
+
+/* The book is always contained inside of #content; treat this as you would the HTML body */
+#content {
+  font-family: Georgia, Baskerville, Garamond, Times, serif;
+  background-color: #ff0;
+  color: #000;
+  padding: 2em 1em;
+  margin: 0;
+  font-size: 100%;
+}	
+
+/* H1 is used only for the Book title (e.g. "Book I") */
+h1 {
+    font-size: 300%;
+    font-family: 'Dayroom', Georgia, Baskerville, Garamond, Times, serif;
+}
+
+h1, h2 {
+    font-weight: normal;
+    margin-bottom: .2em;
+    padding-bottom: 0;
+    font-family: 'Dayroom', Georgia, Baskerville, Garamond, Times, serif;
+}
+
+/* H2 is used only for the Book subtitle (e.g. "Miss Brooke") */
+h2 {
+    font-size: 200%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h2:after {
+    content: 'Reclaim';
+    border-top: 7px solid #000;
+    text-align: left;
+    display: block;
+    width: 4.5em;
+    margin-top: 1em;
+    padding-top: .3em
+}
+
+/* H3 is used as the chapter header on all chapter pages */
+h3 {
+    font-size: 200%;
+    font-weight: normal;
+    border-top: 3px solid black;
+    padding-top: 1em;
+    font-family: 'Dayroom', Georgia, Baskerville, Garamond, Times, serif;
+}
+
+/* The chapter headings contain two spans with these classes: chapter-name (always contains the word "Chapter") 
+   and chapter-number (as a roman numeral) */
+h3 span.chapter-name {
+}
+
+/* Epigraphs at the beginning of each chapter are in blockquotes */
+blockquote {
+    margin: 1em 9em;
+    padding: 0;
+    font-style: italic;
+}
+
+/* The attribution of the blockquote is a span */
+span.attribution {
+    display: block;
+    margin-top: .3em;
+    text-indent: 0;
+}
+
+/* ...which also contains an attribution-name, wrapping the name of
+   the person who made the quotation */
+span.attribution-name {
+}
+
+/* Outside of the content area you can address the style of the running
+   book and author headings. */
+#content-title .title {
+}
+#content-title .author {
+}
+
+/* The first paragraph in the work has a class called "noindent" which 
+   suppresses any paragraph indentation applied by default, but you can 
+   override this. */
+p.noindent {
+}
+
+/* The first letter of the text is wrapped in a span with
+   the class 'firstletter', which can be used for dropcaps. */
+span.firstletter {
+}
+
+p {
+    line-height: 1.5em;
+    margin: 1em 0;
+    padding: 0;
+    text-align: justify;
+    text-indent: 1.8em;
+}
+
+p.noindent {
+    text-indent: 0;
+}
+
+/* Middlemarch contains a number of letters, which can be
+   styled differently. */
+p.letter {
+    margin: 1em 9em;
+    padding: 0;
+}
+
+/* Found in a letter */
+p.salutation {
+}
+p.closing {
+    margin: 1em 9em;
+    text-align: right;
+}

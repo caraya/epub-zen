@@ -1,0 +1,71 @@
+@font-face {
+  font-family : Springtime;
+  font-weight : bold;
+  src : url(/css/styles/springtime/fonts/springtime.ttf)
+}
+
+@font-face {
+  font-family : SpringtimeFlourish;
+  font-weight : bold;
+  src : url(/css/styles/springtime/fonts/springtime-flourish.ttf)
+}
+
+#content h1 {
+  font-family : SpringtimeFlourish, Springtime, serif;
+  color : dark-green;
+  font-size : 30px;
+  text-align : center
+}
+
+#content h2 {
+  font-family : SpringtimeFlourish, Springtime, serif;
+  text-align : center;
+  color : gray;
+  font-size : 30px;
+  margin-bottom : 2em
+}
+
+#content h3 {
+  font-family : SpringtimeFlourish, Springtime, serif;
+  font-size : 50px;
+  letter-spacing : 5px
+}
+
+#content h3.chapter-name:before {
+  content : " - "
+}
+
+#content h3.chapter-number:after {
+  content : " - "
+}
+
+#content h2:before {
+  content : "  . . . "
+}
+
+#content h2:after {
+  content : "  . . . "
+}
+
+#content {
+  font-family : "Book Antiqua", Palatino, serif
+}
+
+#content-title {
+  font-family : "Book Antiqua", Palatino, serif;
+  color : gray;
+  font-style : normal
+}
+
+#content-title.title {
+  font-variant : small-caps
+}
+
+#content blockquote {
+  font-style : italic
+}
+
+span.attribution {
+  display : block;
+  text-align : right
+}

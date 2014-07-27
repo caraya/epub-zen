@@ -1,0 +1,70 @@
+/* The book is always contained inside of #content; treat this as you would the HTML body.
+   It is important to not change the width of this element (it will be 800px). Leave
+   min-height as-is; it's useful when you set the background color to something 
+   other than white.  */
+#content {
+  min-height: 800px;
+}	 
+
+/* H1 is used only for the Book title (e.g. "Book I") */
+#content h1 {
+}
+
+/* H2 is used only for the Book subtitle (e.g. "Miss Brooke") */
+#content h2 {
+}
+
+/* H3 is used as the chapter header on all chapter pages */
+#content h3 {
+}
+
+/* The chapter headings contain two spans with these classes: chapter-name (always contains the word "Chapter") 
+   and chapter-number (as a roman numeral) */
+#content h3.chapter-name {
+}
+#content h3.chapter-number {
+}
+
+/* Epigraphs at the beginning of each chapter are in blockquotes */
+#content blockquote {
+}
+
+/* The attribution of the blockquote is a span */
+span.attribution {
+}
+
+/* ...which also contains an attribution-name, wrapping the name of
+   the person who made the quotation */
+span.attribution-name {
+}
+
+/* Outside of the content area you can address the style of the running
+   book and author headings. */
+#content-title .title {
+}
+#content-title .author {
+}
+
+/* The first paragraph in the work has a class called "noindent" which 
+   suppresses any paragraph indentation applied by default, but you can 
+   override this. */
+p.noindent {
+}
+
+/* The first letter of the text is wrapped in a span with
+   the class 'firstletter', which can be used for dropcaps. */
+span.firstletter {
+}
+
+/* Middlemarch contains a number of letters, which can be
+   styled differently. */
+#content p.letter {
+}
+
+/* Found in a letter */
+#content p.salutation {
+}
+#content p.closing {
+}
+
+

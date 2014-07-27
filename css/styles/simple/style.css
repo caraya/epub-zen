@@ -1,0 +1,203 @@
+@charset 'utf-8';
+
+
+/*
+
+"Simple"
+
+a contributed style for the ePub Zen Garden (epubzengarden.com)
+created by Paolo Pellegri (pellegri@litheiron.it)
+
+Released under a Creative Commons Attribution license: see
+http://creativecommons.org/licenses/by/3.0/
+
+This is a simple and "economic" style that also tries to ease eyestrain when reading 
+on traditional computer monitors (as opposed to higher-resolution ebook readers).
+
+*/
+
+
+/*
+
+"Simple" uses the excellent "Fontin" type
+by Jos Buivenga (exljbris) -> www.exljbris.com
+
+*/
+@font-face {
+	font-family: 'Fontin-ezg';
+	src: url('/css/styles/simple/fonts/fontin-regular-webfont.eot');   /* IE9 Compat Modes */
+	src: url('/css/styles/simple/fonts/fontin-regular-webfont.eot?iefix') format('eot'),   /* IE6-IE8 */
+	     url('/css/styles/simple/fonts/fontin-regular-webfont.woff') format('woff'),   /* Modern Browsers */
+	     url('/css/styles/simple/fonts/fontin-regular-webfont.ttf')  format('truetype'),   /* Safari, Android, iOS */
+	     url('/css/styles/simple/fonts/fontin-regular-webfont.svg#webfontWyhQCDoJ') format('svg');   /* Legacy iOS */
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Fontin-ezg';
+	src: url('/css/styles/simple/fonts/fontin-italic-webfont.eot');   /* IE9 Compat Modes */
+	src: url('/css/styles/simple/fonts/fontin-italic-webfont.eot?iefix') format('eot'),   /* IE6-IE8 */
+	     url('/css/styles/simple/fonts/fontin-italic-webfont.woff') format('woff'),   /* Modern Browsers */
+	     url('/css/styles/simple/fonts/fontin-italic-webfont.ttf')  format('truetype'),   /* Safari, Android, iOS */
+	     url('/css/styles/simple/fonts/fontin-italic-webfont.svg#webfontuphk7wre') format('svg');   /* Legacy iOS */
+	font-weight: normal;
+	font-style: italic;
+}
+
+
+/* Reset */
+#content-title,
+#content h1,
+#content h2,
+#content h3,
+#content blockquote,
+#content p
+#content span {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* General */
+#content-title,
+#content {
+	font-family: "Fontin-ezg","Georgia",serif;
+	font-size: 100%;
+	line-height: 1.375em;
+	color: #252c35;
+}
+
+
+/* Running head above content */
+#content-title {
+	font-size: 0.75em;
+	line-height: 1.8333em;
+	font-weight: normal;
+	font-style: normal;
+	text-align: right;
+	text-transform: uppercase;
+}
+#content-title .title,
+#content-title .author {
+	font-size: 1.3333em;
+	line-height: 1em;
+	text-transform: none;
+}
+#content-title .title {
+	font-style: italic;
+	padding-right: 0.0625em;
+}
+#content-title .author {
+	padding-left: 0.0625em;
+}
+
+
+/* Book content */
+#content {
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: left;
+}	 
+
+
+/* Normal text */
+#content p {
+	margin-top: 1.375em;
+	margin-bottom: 1.375em;
+	text-indent: 0;
+}
+
+
+/* Headings */
+#content h1,
+#content h2,
+#content h3 {
+	font-weight: normal;
+}
+#content h1,
+#content h2 {
+	text-align: center;
+}
+#content h1,
+#content h3 {
+	color: #3e4a58;
+}
+#content h1 {
+	border-bottom: solid 0.0625em #dce1e6;
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 4.125em -0.5em 0;
+	padding: 0.6875em 0.5em 0.625em;
+	text-transform: uppercase;
+	letter-spacing: 0.0625em;
+}
+#content h2 {
+	border-bottom: solid 0.0278em #dce1e6;
+	font-size: 2.25em;
+	line-height: 1.2222em;
+	margin: 0 -0.2222em 0;
+	padding: 0.3056em 0.2222em 0.2778em;
+}
+#content h3 {
+	border-top: solid 0.0625em #dce1e6;
+	border-bottom: solid 0.0625em #dce1e6;
+	font-size: 1em;
+	line-height: 1.375em;
+	margin: 4.75em -0.5em 4.125em;
+	padding: 0.375em 0.5em 0.25em;
+	text-transform: uppercase;
+	letter-spacing: 0.0625em;
+}
+
+
+/* Epigraphs */
+#content blockquote {
+	margin: 2.75em 2em 4.125em;
+	font-style: italic;
+}
+#content blockquote + blockquote {
+	margin-top: -2.75em;
+}
+#content blockquote p {
+	margin-bottom: 0;
+}
+#content blockquote .speaker {
+	font-style: normal;
+	text-transform: uppercase;
+	font-size: 0.75em;
+	line-height: 0.75em;
+}
+#content blockquote .attribution {
+	color: #3e4a58;
+	display: block;
+	font-size: 0.875em;
+	line-height: 1.5714em;
+	margin-top: 0;
+	padding: 1.5714em 0 0 2.2857em;
+}
+#content blockquote .attribution-name {
+	font-style: normal;
+}
+
+
+/* Letters */
+#content p.letter,
+#content p.closing {
+	font-size: 0.875em;
+	line-height: 1.5714em;
+	margin: 1.5714em 2.2857em;
+}
+#content .para-start-phrase {
+	text-transform: uppercase;
+}
+
+
+/* Poems */
+#content .poem {
+	margin: 2.75em 6em 2.75em 6em;
+	font-style: italic;
+}
+#content .poem + .poem {
+	margin: -1.375em 6em 2.75em 6em;
+}
+
