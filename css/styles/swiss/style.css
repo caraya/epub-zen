@@ -1,0 +1,78 @@
+#content, #content-title {
+  font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color : rgb(70, 70, 70)
+}
+
+#content-title.title, #content-title.author {
+  text-transform : uppercase;
+  font-style : normal
+}
+
+#content h3, #content h2, #content h1 {
+  font-family : "Helvetica Neue Bold", HelveticaNeueBold, Helvetica, Arial, sans-serif;
+  line-height : 30px;
+  font-size : 30px
+}
+
+#content blockquote {
+  font-family : "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color : rgb(120, 120, 120)
+}
+
+#content h1 {
+  color : rgb(200, 200, 200);
+  font-weight : normal;
+  font-size : 80px;
+  position : relative;
+  top : 300px;
+  display : inline
+}
+
+#cover-image {
+  border : 1px solid rgb(120, 120, 120)
+}
+
+#cover-anchor {
+  border : none
+}
+
+#content h1:after {
+  content : ": "
+}
+
+#content h2 {
+  color : gray;
+  font-weight : normal;
+  font-size : 80px;
+  line-height : 80px;
+  position : relative;
+  top : 300px
+}
+
+#content h3 {
+  clear : both;
+  background : rgb(70, 70, 70);
+  text-transform : uppercase
+}
+
+#content h3 span {
+  background : white;
+  color : rgb(70, 70, 70);
+}
+
+#content.chapter-number {
+}
+
+#content.chapter-name {
+
+}
+
+#content.attribution {
+  font-variant : small-caps;
+  text-transform : lowercase;
+  display : block
+}
+
+#content p {
+  text-indent : 2em
+}

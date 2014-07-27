@@ -1,0 +1,142 @@
+/* 	"Gibson" for epubzengarden.com
+	Created by Adam Scott 
+	E-mail: adam@adam-scott.net
+	Released under a Creative Commons Attribution license.
+  */
+
+
+@font-face {
+	font-family: 'OFLSortsMillGoudyRegular';
+	src: url('/css/styles/gibson/fonts/OFLGoudyStM.ttf'); 
+/*	src: local('OFL Sorts Mill Goudy'), local('OFLGoudyStM'), url('/static/designs/gibson/OFLGoudyStM.woff') format('woff'), url(/static/designs/gibson/'OFLGoudyStM.ttf') format('truetype'), url('/static/designs/gibson/OFLGoudyStM.svg#OFLGoudyStM') format('svg'); */
+}
+
+@font-face {
+	font-family: 'OFLSortsMillGoudyItalic';
+	src: url('/css/styles/gibson/fonts/OFLGoudyStM-Italic.ttf');
+/*	src: local('OFL Sorts Mill Goudy'), local('OFLGoudyStM-Italic'), url('/static/designs/gibson/OFLGoudyStM-Italic.woff') format('woff'), url('/static/designs/gibson/OFLGoudyStM-Italic.ttf') format('truetype'), url('/static/designs/gibson/OFLGoudyStM-Italic.svg#OFLGoudyStM-Italic') format('svg'); */
+}
+
+
+#content {
+  	line-height: 1.4em;
+	vertical-align: baseline;
+	font-family: OFLSortsMillGoudyRegular, Baskerville, "Baskerville old face", "Hoefler Text", Garamond, "Times New Roman", serif;
+	color: #000;
+	padding: 22px; 
+}
+
+
+/* H1 is used only for the Book title (e.g. "Book I") */
+#content h1 {
+	font-size:3.5em;  /* 16x3.5=56 */ 
+	line-height: 1.0667em;
+	font-weight: normal;
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+
+/* H2 is used only for the Book subtitle (e.g. "Miss Brooke") */
+#content h2 {
+	font-size:1.5em;   /* 16x1.5=24 */
+	margin-top: -.7em;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+}
+
+/* H3 is used as the chapter header on all chapter pages */
+#content h3 {
+	font-size:2.25em; /* 16x2.25=36 */
+	color: #333;
+	line-height: .622em;
+	padding-bottom:  1.2444em;
+	font-style: italic;
+	text-align: center;
+	font-weight: normal;
+}
+
+
+/* The chapter headings contain two spans with these classes: chapter-name (always contains the word "Chapter") 
+   and chapter-number (as a roman numeral) */
+/*.chapter-name {
+	
+}*/
+.chapter-number {
+	font-size: .8em;
+	letter-spacing: .1em;
+}
+
+/* Epigraphs at the beginning of each chapter are in blockquotes */
+#content blockquote {
+	margin:1.4em 1em 2.8em 1em;
+	text-align: center;
+}
+
+blockquote:first-letter{
+	font-size: 120%;
+}
+
+/* The attribution of the blockquote is a span */
+span.attribution {
+	display: block;
+	text-align: center;
+	font-size: .8em;
+	font-variant: small-caps;
+	letter-spacing: .2em;
+}
+
+/* ...which also contains an attribution-name, wrapping the name of
+   the person who made the quotation */
+span.attribution-name {
+	font-weight: bold;
+	display: block;
+}
+
+/* Outside of the content area you can address the style of the running
+   book and author headings. */
+/*#content-title .title {
+}
+#content-title .author {
+}*/
+
+#content p {
+	text-indent: 2em;
+}
+#content p.noindent{
+	text-indent: 0;
+}
+
+#content p.noindent:first-line {
+	font-variant: small-caps;
+	font-size: 1.1em;
+	letter-spacing: .15em;
+}
+
+#content blockquote p{
+	text-indent: 0;
+}
+
+/* The first letter of the text is wrapped in a span with
+   the class 'firstletter', which can be used for dropcaps. */
+span.firstletter {
+}
+
+/* Middlemarch contains a number of letters, which can be
+   styled differently. */
+#content p.letter {
+	padding-left: 1em;
+	padding-right:1em;
+}
+
+/* Found in a letter */
+#content p.salutation {
+	display: block;
+	font-variant: small-caps;
+}
+#content p.closing {
+	display: block;
+	text-indent: 1em;
+}
+
+

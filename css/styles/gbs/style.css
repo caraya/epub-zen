@@ -1,0 +1,111 @@
+@font-face {
+  font-family : Goudy;
+  src : url('/css/styles/gbs/fonts/OFLGoudyStM.otf')
+}
+@font-face {
+  font-family : "Goudy Italic";
+  src : url('/css/styles/gbs/fonts/OFLGoudyStM-Italic.otf')
+}
+#content {
+  font-size: 100%;
+  font-family: Goudy, Georgia;
+  text-indent: 0;
+  text-align: justify;
+}	 
+
+#content h1 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	text-align: center;
+	margin: 3em 0 0 0;
+	letter-spacing: .25em;
+}
+#content h1:after {
+	content : "."
+}
+#content h2 {
+	text-transform: uppercase;
+	font-size: 2.5em;
+	text-align: center;	
+	letter-spacing: .25em;
+        line-height: 1.2em;
+}
+#content h2:after {
+	content : "."
+}
+#content #pgepubid00016 {
+    width:600px;
+}
+#content #pgepubid00017 {
+    padding-bottom:10px;
+    width:600px;
+    height: 600px;
+}
+
+#content h3 {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 5em 0 1.5em 0;
+	font-size: 2em;
+	line-height: 1.5em;
+	letter-spacing: .1em;
+	padding-bottom: 1em;
+	background: url('/css/styles/gbs/images/underline.gif') no-repeat bottom center;	
+}
+#content h3:after {
+	content : "." 
+}
+#content h3 .chapter-name { }
+#content h3 .chapter-number { }
+#content blockquote {
+	text-align: justify;
+	line-height: 1.2em;
+	font-style: italic;
+	font-size: .95em;
+	margin: 3em auto;
+	width: 70%;
+	padding-left: 1em;
+	font-family: "Goudy Italic", Georgia;
+}
+i, em {
+	font-family: "Goudy Italic", Georgia;
+}
+#content blockquote p {
+	text-indent: 0;
+}
+span.attribution {
+	display: block;
+	margin: .5em 0 0 0;
+}
+span.attribution-name { }
+#content-title .title { }
+#content-title .author { }
+#content p {
+	text-indent: 2em;
+	line-height: 1.35em;
+	margin-top: .5em;
+	margin-bottom: .5em;
+	padding: 0 1em;
+}
+#content p.noindent {
+	line-height: 1.35em;
+	text-indent: 0;
+	padding: 0 1em;	
+}
+#content span.firstletter {
+	display: block;
+	font-size: 3em;
+	float: left;
+	padding-top: .3em;
+	line-height: .5em;
+	margin: 0 .1em 0 0;
+}
+#content p.letter {
+	width: 80%;
+	margin: .5em auto;
+}
+#content p.salutation { }
+#content p.closing {
+	width: 88%;
+	text-align: right;
+}

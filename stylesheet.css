@@ -1,0 +1,16 @@
+body { 
+  font-family: serif 
+}
+
+p { 
+  line-spacing: 1.2 em 
+}
+
+h1, h2, h3 { 
+  font-family: sans-serif; 
+}
+
+h1.part, h2.subtitle { 
+  text-align: center; margin:auto;
+}
+

@@ -1,0 +1,182 @@
+#content {
+  color : #443300;
+  border : 2px solid #443300;
+  background : #e7d4c3;
+  background-image : url(/css/styles/wallpaper/images/bg1.jpg);
+  font-size : medium;
+  font-family : Baskerville, New Baskerville Roman, Georgia, serif;
+  text-align : justify;
+  min-height: 800px;
+}
+
+#content-title {
+  color : #443300;
+  font-family : Baskerville, New Baskerville Roman, Georgia, serif;
+  font-size : medium;
+  font-style : normal;
+  font-weight : normal
+}
+
+
+#content P {
+  text-indent : 4%;
+  padding-right : 1em;
+  padding-left : 1em
+}
+
+#content P.noindent {
+  text-indent : 0%
+}
+
+#content P.poem {
+  text-indent : 0%;
+  margin-left : 10%;
+  font-size : small
+}
+
+#content P.letter {
+  font-size : small;
+  margin-left : 5%;
+  margin-right : 5%
+}
+
+#content P.salutation {
+  font-size : small;
+  text-indent : 0%;
+  margin-left : 5%;
+  margin-right : 5%
+}
+
+#content P.closing {
+  font-size : small;
+  text-indent : 0%;
+  margin-left : 5%;
+  margin-right : 5%
+}
+
+#content P.footnote {
+  font-size : small;
+  text-indent : 0%;
+  margin-left : 0%;
+  margin-right : 0%
+}
+
+#content P.transnote {
+  font-size : small;
+  text-indent : 0%;
+  margin-left : 0%;
+  margin-right : 0%
+}
+
+#content P.index {
+  font-size : small;
+  text-indent : -5%;
+  margin-left : 5%;
+  margin-right : 0%
+}
+
+#content blockquote {
+  color : #665522;
+  font-size : medium;
+  line-height : 1em;
+  text-indent : 0%;
+  margin-left : 40%;
+  margin-bottom : 0pt;
+  font-style : italic
+}
+
+#content P.dedication {
+  text-indent : 0%;
+  margin-left : 15%;
+  text-align : justify
+}
+
+#content P.published {
+  font-size : small;
+  text-indent : 0%;
+  margin-left : 15%
+}
+
+#content P.quote {
+  font-size : small;
+  text-indent : 4%;
+  margin-left : 0%;
+  margin-right : 0%
+}
+
+#content P.report {
+  font-size : small;
+  text-indent : 4%;
+  margin-left : 0%;
+  margin-right : 0%
+}
+
+#content P.report2 {
+  font-size : small;
+  text-indent : 4%;
+  margin-left : 10%;
+  margin-right : 10%
+}
+
+#content P.finis {
+  text-align : center;
+  text-indent : 0%;
+  margin-left : 0%;
+  margin-right : 0%
+}
+
+#content h4.c4 {
+  text-align : center
+}
+
+h2.c3 {
+  text-align : center;
+}
+
+#content h1 {
+  margin-top : 100px;
+  color : #443300;
+  font-size : 60px;
+  text-transform : uppercase;
+  font-weight : normal;
+  font-style : italic;
+  text-align : center;
+  line-height : 6pt
+}
+
+#content h2 {
+  margin-top : 150px;
+  background : #443300;
+  color : #e7d4c3;
+  font-size : 64pt;
+  text-transform : uppercase;
+  font-weight : normal;
+  font-style : italic;
+  text-align : center;
+  line-height : 44pt;
+  padding-bottom : 12pt;
+}
+
+#content h3.c2 {
+  margin-bottom : 2px;
+  padding-bottom : 12pt;
+  background : #443300;
+  color : #e7d4c3;
+  font-size : 64pt;
+  text-transform : uppercase;
+  font-weight : normal;
+  font-style : italic;
+  line-height : 44pt;
+  text-align : center
+}
+
+#content h1.c1 {
+  text-align : center
+}
+
+#content .firstletter {
+  float : left;
+  font-size : 100px;
+  line-height : 0.700em;
+  padding-top : 2px
+}

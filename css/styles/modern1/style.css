@@ -1,0 +1,72 @@
+/* ePub Modern 1
+ *
+ * Copyright (C) 2009 Reece H. Dunn [mailto:msclrhd@gmail.com]
+ *
+ * Released under the Creative Commons Attribution-Share Alike 2.0 UK: England
+ * & Wales Licence [http://creativecommons.org/licenses/by-sa/2.0/uk/].
+ *
+ * The idea behind this stylesheet is to create a simple, modern layout for ePub
+ * documents.
+ */
+
+#content
+{
+	background-color: white;
+	color: black;
+
+	font-family: Cambria, Liberation Serif, Bitstream Vera Serif, Georgia, Times, Times New Roman, serif;
+	text-align: justify;
+}
+
+#content h1, #content h2
+{
+	text-align: right;
+}
+
+#content h1
+{
+	border-bottom: 1px solid black;
+}
+
+#content h3
+{
+	font-size: 1.5em;
+	text-align: right;
+	margin-top:    5em;
+	margin-bottom: 5em;
+}
+
+blockquote
+{
+	margin-left: 5em;
+	margin-right: 5em;
+}
+
+blockquote .attribution
+{
+	display: block;
+	text-align: right;
+}
+
+p
+{
+	text-indent: 2em;
+	text-align: justify;
+	margin: 0;
+}
+
+p.first, p.noindent, blockquote p
+{
+	text-indent: 0;
+	margin-top: 1em;
+}
+
+
+#content .firstletter
+{
+	float: left;
+	font-size: 2.5em;
+	line-height: 0.9em;
+	height: 0.9em;
+}
+

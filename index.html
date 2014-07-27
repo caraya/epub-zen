@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>ePub js test</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="css/epubjs.css" ></link>
+    <link id="stylesheet" rel="stylesheet" href="css/styles/contact/style.css" ></link>
+    <link type="text/css" href="css/ui-lightness/jquery-ui-1.7.1.custom.css" rel="stylesheet" />
+    <script type="text/javascript">
+      var epub_dir = 'epub/middlemarch';
+//      var epub_dir = 'epub/emma-jane_austen';
+
+    </script>
+    <script type="text/javascript" src="js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js"></script>
+    <script type="text/javascript" src="js/mousewheel.js"></script>    
+    <script type="text/javascript" src="js/epubjs.js"></script>
+
+  </head>
+  <body>
+    <div id="book" class="clear">
+      <div id="toc-container">
+          <form id="zg-form" action="/" method="get">
+          <fieldset>
+            <legend>Change the style</legend>
+            <a id="cover_anchor" href="/css/styles/carter/cover.jpg"><img src="/css/styles/carter/cover.jpg" alt="Middlemarch" width="60" height="80" id="cover"></a>
+            <select name="style" id="style">
+              <option value="carter">Carter</option>
+              <option value="contact" selected="selected">Contact</option>
+              <option value="gbs">Gbs</option>
+              <option value="gibson">Gibson</option>
+              <option value="jost">Jost</option>
+              <option value="modern1">Modern1</option>
+              <option value="noir">Noir</option>
+              <option value="reclaim">Reclaim</option>
+              <option value="seneca">Seneca</option>
+              <option value="simple">Simple</option>
+              <option value="springtime">Springtime</option>
+              <option value="swiss">Swiss</option>
+              <option value="terminal">Terminal</option>
+              <option value="traditional">Traditional</option>
+              <option value="tribute">Tribute</option>
+              <option value="wallpaper">Wallpaper</option>
+            </select>
+            <select name="epub" id="epub">
+              <option value="epub/middlemarch">Middlemarch</option>
+              <option value="epub/emma-jane_austen">Emma</option>
+            </select>
+          </fieldset>
+        </form>
+        <ol id="toc"></ol>
+      </div>
+      <h1 id="content-title" ></h1>
+      <div id="total-size"><div id="remaining"></div></div>
+      <div id="content"></div>
+    </div>
+    <div id="info">
+    <p>Usage: 'n' for next page, 'p' for previous page, 'j' for next chapter, 'k' for previous chapter</p>
+    <p>Current support: Firefox, Safari, IE 7. As of April 7, 2009.</p> 
+    <p>Resizable window, see lower-right corner. Mousewheel support to paginate forward and back.</p>
+    <p>Available from <a href="http://code.google.com/p/epub-tools/source/browse/#svn/trunk/epubtools/epubjs">Google Code</a></p> 
+    </div>
+    <script>
+      $().ready(function() {
+        // handler for style select dropdown
+        $('#style').change(function(){
+          $('#style option:selected').each(function(){ 
+            var selection = $(this).val();
+
+            // load the selected stylesheet 
+            $('link#stylesheet').attr({href:"css/styles/" + selection + "/style.css"});
+
+            // load the selected cover thumbnail 
+            $('#cover').attr({src:"css/styles/" + selection + "/cover.jpg"})
+            $('#cover_anchor').attr({href:"css/styles/" + selection + "/cover.jpg"})
+          });
+        });
+
+        // handler for epub select dropdown
+        $('#epub').change(function(){
+          $('#epub option:selected').each(function(){ 
+            var selection = $(this).val();
+            console.log(selection);
+            epub_dir = selection;
+            ready();
+          });
+        });
+
+      });
+    </script>
+  </body>
+</html>  
